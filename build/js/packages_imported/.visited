@@ -1,0 +1,76 @@
+{
+  "version": "9",
+  "items": {
+    "18cde66bd3b7a43050c716ede0e8853f": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.3.72/a44129682a793513f559af4da4ab175c0c31b185/kotlin-stdlib-js-1.3.72.jar",
+      "target": "kotlin/1.3.72"
+    },
+    "3553c837b3390f66587fdb569d2e7951": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.72/6ca8bee3d88957eaaaef077c41c908c9940492d8/kotlin-stdlib-common-1.3.72.jar"
+    },
+    "d95822d69c44899ef2dd4737ec3ece98": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains/kotlin-react/16.13.0-pre.94-kotlin-1.3.70/79afafcacf4dd75d337747965a655cb66c32f4b8/kotlin-react-16.13.0-pre.94-kotlin-1.3.70.jar",
+      "target": "kotlin-react/16.13.0-pre.94-kotlin-1.3.70"
+    },
+    "a687aecdb7d202bbaab34d46a5000a25": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains/kotlin-extensions/1.0.1-pre.94-kotlin-1.3.70/ea38298bb6e7014248f12e9aa1fc011978efdee2/kotlin-extensions-1.0.1-pre.94-kotlin-1.3.70.jar",
+      "target": "kotlin-extensions/1.0.1-pre.94-kotlin-1.3.70"
+    },
+    "db885a1ea8a3306f3e215806a72c55e0": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-html-js/0.7.1/22007d2523f1ced818595116219e1b56bd5f9fc0/kotlinx-html-js-0.7.1.jar",
+      "target": "kotlinx-html-js/0.7.1"
+    },
+    "95ad3f2a9ec7694d7fdc5ca5fd027a32": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-html-common/0.7.1/768e24823f809792665cac3ce1f79b74eb8ee992/kotlinx-html-common-0.7.1.jar"
+    },
+    "86c3e5f8324d79303eac400ce641ff16": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-js/1.3.5/95790145ed98b17a90b1a8848a27f0431d2ec7d2/kotlinx-coroutines-core-js-1.3.5.jar",
+      "target": "kotlinx-coroutines-core/1.3.5"
+    },
+    "2186ee5c0d4e277b24ff225976eb9a17": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.3.5/fe944d1d62231b1f7494299c1e4879b9abe9f792/kotlinx-coroutines-core-common-1.3.5.jar"
+    },
+    "bb53782c46ca5172035a8eba9019ebbc": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.5/b245208f2b844c02dbb506312d4859bde93bce8d/kotlinx-coroutines-core-1.3.5.jar"
+    },
+    "fd6be1209bf3f47c8e16db2204254bca": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.70/e5d97e25bb5b30dcfc022ec1c8f3959a875257fb/kotlin-stdlib-1.3.70.jar"
+    },
+    "72ac29dee68b63d11710f49a42861308": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
+    },
+    "513ce851ac034c61340550f2bd51388c": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains/kotlin-react-dom/16.13.0-pre.94-kotlin-1.3.70/ed85ff1d142fcf17b143bd4f351fc96526c9129c/kotlin-react-dom-16.13.0-pre.94-kotlin-1.3.70.jar",
+      "target": "kotlin-react-dom/16.13.0-pre.94-kotlin-1.3.70"
+    },
+    "19e1513786788f8685a59c5a21a6acba": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains/kotlin-styled/1.0.0-pre.94-kotlin-1.3.70/58fb761036b709d799e015204ca3c65febf8db87/kotlin-styled-1.0.0-pre.94-kotlin-1.3.70.jar",
+      "target": "kotlin-styled/1.0.0-pre.94-kotlin-1.3.70"
+    },
+    "03b4a2b1a7f2c71583b7f7c0279e3b3d": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains/kotlin-css-js/1.0.0-pre.94-kotlin-1.3.70/d9dd2c8a834a92f786285bd349174b1687f74f31/kotlin-css-js-1.0.0-pre.94-kotlin-1.3.70.jar",
+      "target": "kotlin-css-js/1.0.0-pre.94-kotlin-1.3.70"
+    },
+    "bda54837ffffe00997601cadf37aa6c4": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains/kotlin-css/1.0.0-pre.94-kotlin-1.3.70/6e466c7627236de1758f499ed189a9d1554cc831/kotlin-css-1.0.0-pre.94-kotlin-1.3.70.jar"
+    },
+    "a28a4429e888bcd8f356707dedbcd7e9": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-source-map-loader/1.3.72/291c59847ea092350a8d829ad96a89978c0e47a3/kotlin-source-map-loader-1.3.72.jar",
+      "target": "kotlin-source-map-loader/1.3.72"
+    },
+    "0bf9aedb6be01b33f607a6451f83a1f4": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js-runner/1.3.72/86d351b4b9b1f851109e36dd0a66c3fc5cf742a7/kotlin-test-js-runner-1.3.72.jar",
+      "target": "kotlin-test-js-runner/1.3.72"
+    },
+    "389d960671c677a8e9ea8740c28007a9": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.3.72/6d0017e0b0b5792c855a0170d0ed46b5c13463ec/kotlin-test-js-1.3.72.jar",
+      "target": "kotlin-test/1.3.72"
+    },
+    "f6a3e2c1961b1cd951ab88e498739e3c": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-common/1.3.72/92aa1317f68727e77867727c2bd2a2f4460116b2/kotlin-test-common-1.3.72.jar"
+    },
+    "6ebec960065f90477944ccc7bc5b166a": {
+      "src": "/home/constantin/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.3.72/43af036072bee8c338852e253dab220389fd9ed8/kotlin-test-annotations-common-1.3.72.jar"
+    }
+  }
+}

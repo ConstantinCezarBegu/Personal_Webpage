@@ -1,0 +1,30 @@
+{
+  "main": "kotlin/Personal_Webpage.js",
+  "devDependencies": {
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.9.0"
+  },
+  "dependencies": {
+    "kotlin": "1.3.72",
+    "kotlin-react": "16.13.0-pre.94-kotlin-1.3.70",
+    "kotlin-extensions": "1.0.1-pre.94-kotlin-1.3.70",
+    "kotlinx-html-js": "0.7.1",
+    "kotlinx-coroutines-core": "1.3.5",
+    "kotlin-react-dom": "16.13.0-pre.94-kotlin-1.3.70",
+    "kotlin-styled": "1.0.0-pre.94-kotlin-1.3.70",
+    "kotlin-css-js": "1.0.0-pre.94-kotlin-1.3.70",
+    "kotlin-source-map-loader": "1.3.72",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "*",
+    "inline-style-prefixer": "*",
+    "react-player": "*",
+    "react-share": "*"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "Personal_Webpage",
+  "version": "1.0.0-SNAPSHOT"
+}
