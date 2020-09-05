@@ -2,24 +2,40 @@
   mode: 'development',
   resolve: {
     modules: [
+      '/home/constantin/IdeaProjects/Personal_Webpage/build/js/packages/Personal_Webpage/kotlin-dce-dev',
       'node_modules'
     ]
   },
-  plugins: [],
+  plugins: [
+    TeamCityErrorPlugin {}
+  ],
   module: {
     rules: [
       {
         test: /\.js$/,
         use: [
-          'kotlin-source-map-loader'
+          'source-map-loader'
         ],
         enforce: 'pre'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {}
+          },
+          {
+            loader: 'css-loader',
+            options: {}
+          }
+        ]
       }
     ]
   },
   entry: {
     main: [
-      '/home/constantin/IdeaProjects/Personal_Webpage/build/js/packages/Personal_Webpage/kotlin/Personal_Webpage.js'
+      '/home/constantin/IdeaProjects/Personal_Webpage/build/js/packages/Personal_Webpage/kotlin-dce-dev/Personal_Webpage.js'
     ]
   },
   output: {
@@ -29,15 +45,21 @@
     libraryTarget: 'umd'
   },
   devtool: 'eval-source-map',
+  stats: {
+    warningsFilter: [
+      /Failed to parse source map/
+    ],
+    warnings: false,
+    errors: false
+  },
   devServer: {
     inline: true,
     lazy: false,
     noInfo: true,
     open: true,
     overlay: false,
-    port: 8080,
     contentBase: [
-      '/home/constantin/IdeaProjects/Personal_Webpage/build/processedResources/Js/main'
+      '/home/constantin/IdeaProjects/Personal_Webpage/build/processedResources/js/main'
     ]
   }
 }

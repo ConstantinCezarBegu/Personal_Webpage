@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.js") version "1.3.72"
+    id("org.jetbrains.kotlin.js") version "1.4.0"
 }
 
 group = "org.example"
@@ -11,28 +11,48 @@ repositories {
     jcenter()
 }
 
+kotlin {
+    js {
+        browser {
+            webpackTask {
+                cssSupport.enabled = true
+            }
+
+            runTask {
+                cssSupport.enabled = true
+            }
+
+            testTask {
+                useKarma {
+                    useChromeHeadless()
+                    webpackConfig.cssSupport.enabled = true
+                }
+            }
+        }
+        binaries.executable()
+    }
+}
+
 dependencies {
     implementation(kotlin("stdlib-js"))
 
-    //React, React DOM + Wrappers (chapter 3)
-    implementation("org.jetbrains:kotlin-react:16.13.0-pre.94-kotlin-1.3.70")
-    implementation("org.jetbrains:kotlin-react-dom:16.13.0-pre.94-kotlin-1.3.70")
+    //React, React DOM + Wrappers
+    implementation("org.jetbrains:kotlin-react:16.13.1-pre.110-kotlin-1.4.0")
+    implementation("org.jetbrains:kotlin-react-dom:16.13.1-pre.110-kotlin-1.4.0")
     implementation(npm("react", "16.13.1"))
     implementation(npm("react-dom", "16.13.1"))
 
-    //Kotlin Styled (chapter 3)
-    implementation("org.jetbrains:kotlin-styled:1.0.0-pre.94-kotlin-1.3.70")
-    implementation(npm("styled-components"))
-    implementation(npm("inline-style-prefixer"))
+    //Kotlin Styled
+    implementation("org.jetbrains:kotlin-styled:1.0.0-pre.110-kotlin-1.4.0")
+    implementation(npm("styled-components", "~5.1.1"))
+    implementation(npm("inline-style-prefixer", "~6.0.0"))
 
-    //Video Player (chapter 7)
-    implementation(npm("react-player"))
+    //Video Player
+    implementation(npm("react-player", "~2.6.0"))
 
-    //Share Buttons (chapter 7)
-    implementation(npm("react-share"))
+    //Share Buttons
+    implementation(npm("react-share", "~4.2.1"))
 
-    //Coroutines (chapter 8)
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.5")
+    //Coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
 }
-
-kotlin.target.browser { }

@@ -2,12 +2,14 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false" isTestModule="true" externalProjectId="Personal_Webpage" pureKotlinSourceFolders="$MODULE_DIR$/../../src/test/kotlin;/home/constantin/IdeaProjects/Personal_Webpage/src/main/kotlin">
+      <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false" isTestModule="true" externalProjectId="Personal_Webpage" pureKotlinSourceFolders="$MODULE_DIR$/../../src/test/kotlin;/home/constantin/IdeaProjects/Personal_Webpage/src/main/kotlin;/home/constantin/IdeaProjects/Personal_Webpage/build/externals/Personal_Webpage/src">
         <sourceSets>
           <sourceSet>Personal_Webpage.main</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
-        <externalSystemTestTasks>browserTest|Personal_Webpage:test|Js</externalSystemTestTasks>
+        <externalSystemTestTasks>
+          <externalSystemTestTask>browserTest|Personal_Webpage:test|js</externalSystemTestTask>
+        </externalSystemTestTasks>
         <compilerSettings />
         <compilerArguments>
           <option name="outputFile" value="$MODULE_DIR$/../../build/js/packages/Personal_Webpage-test/kotlin/Personal_Webpage-test.js" />
@@ -17,8 +19,8 @@
           <option name="target" value="v5" />
           <option name="moduleKind" value="umd" />
           <option name="main" value="call" />
-          <option name="languageVersion" value="1.3" />
-          <option name="apiVersion" value="1.3" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
           <option name="pluginOptions">
             <array />
           </option>

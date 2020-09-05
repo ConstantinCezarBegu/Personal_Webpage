@@ -1,19 +1,7 @@
 {
   "private": true,
   "workspaces": [
-    "packages/Personal_Webpage",
-    "packages/Personal_Webpage-test",
-    "packages_imported/kotlin/1.3.72",
-    "packages_imported/kotlin-react/16.13.0-pre.94-kotlin-1.3.70",
-    "packages_imported/kotlin-extensions/1.0.1-pre.94-kotlin-1.3.70",
-    "packages_imported/kotlinx-html-js/0.7.1",
-    "packages_imported/kotlinx-coroutines-core/1.3.5",
-    "packages_imported/kotlin-react-dom/16.13.0-pre.94-kotlin-1.3.70",
-    "packages_imported/kotlin-styled/1.0.0-pre.94-kotlin-1.3.70",
-    "packages_imported/kotlin-css-js/1.0.0-pre.94-kotlin-1.3.70",
-    "packages_imported/kotlin-source-map-loader/1.3.72",
-    "packages_imported/kotlin-test-js-runner/1.3.72",
-    "packages_imported/kotlin-test/1.3.72"
+    "packages/Personal_Webpage"
   ],
   "devDependencies": {},
   "dependencies": {},
