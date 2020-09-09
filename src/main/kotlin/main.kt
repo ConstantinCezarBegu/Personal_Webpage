@@ -1,10 +1,8 @@
 import kotlinx.browser.document
 import kotlinx.css.*
-import kotlinx.html.classes
 import react.dom.*
 import styled.css
 import styled.styledDiv
-import styled.styledH2
 import styled.styledImg
 
 fun main() {
@@ -19,13 +17,14 @@ fun main() {
             }
             styledImg {
                 css {
-                    width = LinearDimension("10em")
-                    border = "0.25em solid"
+                    width = LinearDimension("20em")
+                    borderWidth = LinearDimension("0.25em")
+                    borderStyle = BorderStyle.solid
                     borderRadius = LinearDimension("50%")
                     borderColor = Color.currentColor
                 }
                 attrs {
-                    src = "kotlin_icon.png"
+                    src = "profile_picture.jpg"
                 }
             }
             h1 {
