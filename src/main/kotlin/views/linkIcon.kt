@@ -7,6 +7,7 @@ import react.child
 import react.dom.a
 import react.functionalComponent
 import styled.css
+import styled.styledA
 import styled.styledImg
 
 external interface LinkIconProps : RProps {
@@ -15,10 +16,12 @@ external interface LinkIconProps : RProps {
 }
 
 private val linkIcon = functionalComponent<LinkIconProps> { props ->
-    a(href = props.link) {
+    styledA (href = props.link) {
+        css {
+            display = Display.inlineBlock
+        }
         styledImg(src = props.icon) {
             css {
-                display = Display.inlineBlock
                 width = LinearDimension("2em")
                 height = LinearDimension("2em")
                 margin(horizontal = LinearDimension("0.5em"))
