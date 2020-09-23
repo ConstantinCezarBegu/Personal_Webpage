@@ -22,8 +22,8 @@ private val linkIcon = functionalComponent<LinkIconProps> { props ->
         }
         styledImg(src = props.icon) {
             css {
-                width = LinearDimension("2em")
-                height = LinearDimension("2em")
+                width = LinearDimension("2.5em")
+                height = LinearDimension("2.5em")
                 margin(horizontal = LinearDimension("0.5em"))
             }
         }
