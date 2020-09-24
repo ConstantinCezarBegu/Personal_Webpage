@@ -22,13 +22,6 @@
   var Unit = Kotlin.kotlin.Unit;
   var Color = $module$kotlin_css.kotlinx.css.Color;
   var set_color = $module$kotlin_css.kotlinx.css.set_color_ommczd$;
-  var render = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.react.dom.render_2955dm$;
-  var attributesMapOf = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.attributesMapOf_jyasbz$;
-  var H3_init = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.H3;
-  var RDOMBuilder_init = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.react.dom.RDOMBuilder;
-  var html = $module$kotlin_wrappers_kotlin_styled_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html;
-  var DIV_init = $module$kotlin_wrappers_kotlin_styled_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.DIV;
-  var StyledDOMBuilder_init = $module$kotlin_wrappers_kotlin_styled_jsLegacy.styled.StyledDOMBuilder;
   var Display = $module$kotlin_css.kotlinx.css.Display;
   var set_display = $module$kotlin_css.kotlinx.css.set_display_qidz4o$;
   var flex = $module$kotlin_css.kotlinx.css.flex_f3fbr5$;
@@ -39,8 +32,20 @@
   var Align = $module$kotlin_css.kotlinx.css.Align;
   var set_alignItems = $module$kotlin_css.kotlinx.css.set_alignItems_olgsez$;
   var LinearDimension = $module$kotlin_css.kotlinx.css.LinearDimension;
-  var set_height = $module$kotlin_css.kotlinx.css.set_height_n8chyh$;
+  var set_marginTop = $module$kotlin_css.kotlinx.css.set_marginTop_n8chyh$;
+  var set_backgroundColor = $module$kotlin_css.kotlinx.css.set_backgroundColor_ommczd$;
   var set_width = $module$kotlin_css.kotlinx.css.set_width_n8chyh$;
+  var set_marginBottom = $module$kotlin_css.kotlinx.css.set_marginBottom_n8chyh$;
+  var render = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.react.dom.render_2955dm$;
+  var html = $module$kotlin_wrappers_kotlin_styled_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html;
+  var H3_init = $module$kotlin_wrappers_kotlin_styled_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.H3;
+  var StyledDOMBuilder_init = $module$kotlin_wrappers_kotlin_styled_jsLegacy.styled.StyledDOMBuilder;
+  var attributesMapOf = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.attributesMapOf_jyasbz$;
+  var H3_init_0 = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.H3;
+  var RDOMBuilder_init = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.react.dom.RDOMBuilder;
+  var H2_init = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.H2;
+  var DIV_init = $module$kotlin_wrappers_kotlin_styled_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.DIV;
+  var set_height = $module$kotlin_css.kotlinx.css.set_height_n8chyh$;
   var functionalComponent = $module$kotlin_wrappers_kotlin_react_jsLegacy.react.functionalComponent_1klik0$;
   var child = $module$kotlin_wrappers_kotlin_react_jsLegacy.react.child_9r8yuv$;
   var H1_init = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.H1;
@@ -67,11 +72,21 @@
   var A_init = $module$kotlin_wrappers_kotlin_styled_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.A;
   var attributesMapOf_1 = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.attributesMapOf_alerag$;
   var IMG_init_0 = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.IMG;
-  var H2_init = $module$kotlin_wrappers_kotlin_react_dom_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.H2;
-  var margin = $module$kotlin_css.kotlinx.css.margin_cx3uck$;
+  var set_border = $module$kotlin_css.kotlinx.css.set_border_krvuuu$;
+  var margin = $module$kotlin_css.kotlinx.css.margin_9vmwvs$;
+  var HR_init = $module$kotlin_wrappers_kotlin_styled_jsLegacy.$$importsForInline$$['kotlinx-html-js'].kotlinx.html.HR;
+  var margin_0 = $module$kotlin_css.kotlinx.css.margin_cx3uck$;
+  function styledH3$lambda(it) {
+    return new H3_init(html.emptyMap, it);
+  }
   function h3$lambda(closure$classes) {
     return function (it) {
-      return new H3_init(attributesMapOf('class', closure$classes), it);
+      return new H3_init_0(attributesMapOf('class', closure$classes), it);
+    };
+  }
+  function h2$lambda(closure$classes) {
+    return function (it) {
+      return new H2_init(attributesMapOf('class', closure$classes), it);
     };
   }
   function styledDiv$lambda(it) {
@@ -83,50 +98,74 @@
   function main$lambda$lambda$lambda($receiver) {
     return Unit;
   }
+  function main$lambda$lambda$lambda$lambda($receiver) {
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_0($receiver) {
+    return Unit;
+  }
   function main$lambda($receiver) {
     backgroundImage_0($receiver, 'drawable/background.png', main$lambda$lambda);
     var $receiver_0 = new StyledDOMBuilder_init(styledDiv$lambda);
     set_color($receiver_0.css, new Color('#fff'));
     introSegment_0($receiver_0, main$lambda$lambda$lambda);
-    var $receiver_0_0 = new RDOMBuilder_init(h3$lambda(null));
-    $receiver_0_0.unaryPlus_pdl1vz$('testingh');
-    $receiver_0.child_52psg1$($receiver_0_0.create());
-    var $receiver_0_1 = new RDOMBuilder_init(h3$lambda(null));
-    $receiver_0_1.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_1.create());
-    var $receiver_0_2 = new RDOMBuilder_init(h3$lambda(null));
-    $receiver_0_2.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_2.create());
-    var $receiver_0_3 = new RDOMBuilder_init(h3$lambda(null));
+    var $receiver_0_0 = new StyledDOMBuilder_init(styledDiv$lambda);
+    var $receiver_1 = $receiver_0_0.css;
+    set_display($receiver_1, Display.flex);
+    flex($receiver_1, 1.0);
+    set_flexDirection($receiver_1, FlexDirection.column);
+    set_justifyContent($receiver_1, JustifyContent.center);
+    set_alignItems($receiver_1, Align.center);
+    var $receiver_0_1 = new RDOMBuilder_init(h2$lambda(null));
+    $receiver_0_1.unaryPlus_pdl1vz$('Work Experience');
+    $receiver_0_0.child_52psg1$($receiver_0_1.create());
+    lineSeparator_0($receiver_0_0, main$lambda$lambda$lambda$lambda);
+    var $receiver_0_2 = new StyledDOMBuilder_init(styledDiv$lambda);
+    var $receiver_2 = $receiver_0_2.css;
+    set_marginTop($receiver_2, new LinearDimension('0'));
+    set_backgroundColor($receiver_2, new Color('rgba(52, 52, 52, 0.5)'));
+    set_width($receiver_2, new LinearDimension('100%'));
+    var $receiver_0_3 = new StyledDOMBuilder_init(styledH3$lambda);
+    set_marginTop($receiver_0_3.css, new LinearDimension('0'));
     $receiver_0_3.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_3.create());
+    $receiver_0_2.child_52psg1$($receiver_0_3.create());
     var $receiver_0_4 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_4.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_4.create());
+    $receiver_0_2.child_52psg1$($receiver_0_4.create());
     var $receiver_0_5 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_5.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_5.create());
+    $receiver_0_2.child_52psg1$($receiver_0_5.create());
     var $receiver_0_6 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_6.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_6.create());
+    $receiver_0_2.child_52psg1$($receiver_0_6.create());
     var $receiver_0_7 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_7.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_7.create());
+    $receiver_0_2.child_52psg1$($receiver_0_7.create());
     var $receiver_0_8 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_8.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_8.create());
+    $receiver_0_2.child_52psg1$($receiver_0_8.create());
     var $receiver_0_9 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_9.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_9.create());
+    $receiver_0_2.child_52psg1$($receiver_0_9.create());
     var $receiver_0_10 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_10.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_10.create());
+    $receiver_0_2.child_52psg1$($receiver_0_10.create());
     var $receiver_0_11 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_11.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_11.create());
+    $receiver_0_2.child_52psg1$($receiver_0_11.create());
     var $receiver_0_12 = new RDOMBuilder_init(h3$lambda(null));
     $receiver_0_12.unaryPlus_pdl1vz$('testing');
-    $receiver_0.child_52psg1$($receiver_0_12.create());
+    $receiver_0_2.child_52psg1$($receiver_0_12.create());
+    var $receiver_0_13 = new RDOMBuilder_init(h3$lambda(null));
+    $receiver_0_13.unaryPlus_pdl1vz$('testing');
+    $receiver_0_2.child_52psg1$($receiver_0_13.create());
+    var $receiver_0_14 = new StyledDOMBuilder_init(styledH3$lambda);
+    set_marginBottom($receiver_0_14.css, new LinearDimension('0'));
+    $receiver_0_14.unaryPlus_pdl1vz$('testing');
+    $receiver_0_2.child_52psg1$($receiver_0_14.create());
+    $receiver_0_0.child_52psg1$($receiver_0_2.create());
+    lineSeparator_0($receiver_0_0, main$lambda$lambda$lambda$lambda_0);
+    $receiver_0.child_52psg1$($receiver_0_0.create());
     $receiver.child_52psg1$($receiver_0.create());
     return Unit;
   }
@@ -319,7 +358,7 @@
       return new IMG_init_0(attributesMapOf_1(['alt', closure$alt, 'src', closure$src, 'class', closure$classes]), it);
     };
   }
-  function h2$lambda(closure$classes) {
+  function h2$lambda_0(closure$classes) {
     return function (it) {
       return new H2_init(attributesMapOf('class', closure$classes), it);
     };
@@ -339,7 +378,7 @@
     $receiver_2.height = (32).toString();
     $receiver_2.width = (32).toString();
     $receiver_0.child_52psg1$($receiver_0_0.create());
-    var $receiver_0_1 = new RDOMBuilder_init(h2$lambda(null));
+    var $receiver_0_1 = new RDOMBuilder_init(h2$lambda_0(null));
     $receiver_0_1.unaryPlus_pdl1vz$(props.text);
     $receiver_0.child_52psg1$($receiver_0_1.create());
     $receiver.child_52psg1$($receiver_0.create());
@@ -363,6 +402,37 @@
   function iconText_0($receiver, icon, text, handler) {
     return child($receiver, iconText, void 0, iconText$lambda_0(icon, text, handler));
   }
+  function styledHr$lambda(it) {
+    return new HR_init(html.emptyMap, it);
+  }
+  function lineSeparator$lambda($receiver, f) {
+    var $receiver_0 = new StyledDOMBuilder_init(styledHr$lambda);
+    var $receiver_1 = $receiver_0.css;
+    set_border($receiver_1, 'none');
+    set_color($receiver_1, Color.Companion.currentColor);
+    set_backgroundColor($receiver_1, Color.Companion.currentColor);
+    margin($receiver_1, new LinearDimension('0'));
+    set_width($receiver_1, new LinearDimension('100%'));
+    set_height($receiver_1, new LinearDimension('0.2em'));
+    $receiver.child_52psg1$($receiver_0.create());
+    return Unit;
+  }
+  var lineSeparator;
+  function lineSeparator$lambda$lambda(closure$handler) {
+    return function ($receiver) {
+      closure$handler($receiver);
+      return Unit;
+    };
+  }
+  function lineSeparator$lambda_0(closure$handler) {
+    return function ($receiver) {
+      $receiver.attrs_slhiwc$(lineSeparator$lambda$lambda(closure$handler));
+      return Unit;
+    };
+  }
+  function lineSeparator_0($receiver, handler) {
+    return child($receiver, lineSeparator, void 0, lineSeparator$lambda_0(handler));
+  }
   function styledImg$lambda_1(closure$alt, closure$src) {
     return function (it) {
       return new IMG_init(attributesMapOf_0(['alt', closure$alt, 'src', closure$src]), it);
@@ -380,7 +450,7 @@
     var $receiver_1 = $receiver_0_0.css;
     set_width($receiver_1, new LinearDimension('2.5em'));
     set_height($receiver_1, new LinearDimension('2.5em'));
-    margin($receiver_1, void 0, new LinearDimension('0.5em'));
+    margin_0($receiver_1, void 0, new LinearDimension('0.5em'));
     $receiver_0.child_52psg1$($receiver_0_0.create());
     $receiver.child_52psg1$($receiver_0.create());
     return Unit;
@@ -412,11 +482,13 @@
   package$views.backgroundImage_p41x75$ = backgroundImage_0;
   package$views.circularProfilePicture_r5jfew$ = circularProfilePicture_0;
   package$views.iconText_h7tj22$ = iconText_0;
+  package$views.lineSeparator_1hs4h9$ = lineSeparator_0;
   package$views.linkIcon_7nb38n$ = linkIcon_0;
   introSegment = functionalComponent(introSegment$lambda);
   backgroundImage = functionalComponent(backgroundImage$lambda);
   circularProfilePicture = functionalComponent(circularProfilePicture$lambda);
   iconText = functionalComponent(iconText$lambda);
+  lineSeparator = functionalComponent(lineSeparator$lambda);
   linkIcon = functionalComponent(linkIcon$lambda);
   main();
   Kotlin.defineModule('Personal_Webpage', _);
