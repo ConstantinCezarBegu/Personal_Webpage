@@ -14,9 +14,9 @@ private val lineSeparator = functionalComponent<RProps> { _ ->
             border = "none"
             color = Color.currentColor
             backgroundColor = Color.currentColor
-            margin(LinearDimension("0"))
-            width = LinearDimension("100%")
-            height = LinearDimension("0.2em")
+            margin(0.em)
+            width = 100.pct
+            height = 0.2.em
         }
     }
 }

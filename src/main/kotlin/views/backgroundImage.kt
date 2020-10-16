@@ -1,10 +1,7 @@
 package views
 
 import kotlinx.css.*
-import kotlinx.html.DIV
 import react.*
-import react.dom.RDOMBuilder
-import kotlinx.html.emptyMap
 import styled.*
 
 external interface BackgroundImageProps : RProps {
@@ -15,27 +12,26 @@ private val backgroundImage = functionalComponent<BackgroundImageProps> { props 
     styledDiv {
         css {
             display = Display.block
-            padding(LinearDimension("0"))
+            padding(all = 0.em)
             position = Position.fixed
-            top = LinearDimension("0")
-            bottom = LinearDimension("0")
-            left = LinearDimension("0")
-            right = LinearDimension("0")
+            top = 0.em
+            bottom = 0.em
+            left = 0.em
+            right = 0.em
             zIndex = -1
         }
 
-        // Image
         styledDiv {
             css {
                 position = Position.absolute
                 background = "url(\"${props.icon}\")"
                 backgroundSize = "cover"
-                top = LinearDimension("-10%")
-                bottom = LinearDimension("10%")
-                left = LinearDimension("-10%")
-                right = LinearDimension("10%")
-                width = LinearDimension("120%")
-                height = LinearDimension("120%")
+                top = (-10).pct
+                bottom = 10.pct
+                left = (-10).pct
+                right = 10.pct
+                width = 120.pct
+                height = 120.pct
                 filter = "blur(20px) brightness(0.7)"
                 this.opacity = 1
             }
@@ -43,7 +39,10 @@ private val backgroundImage = functionalComponent<BackgroundImageProps> { props 
     }
 }
 
-fun RBuilder.backgroundImage(icon: String, handler: BackgroundImageProps.() -> Unit) = child(backgroundImage) {
+fun RBuilder.backgroundImage(
+        icon: String,
+        handler: BackgroundImageProps.() -> Unit
+) = child(backgroundImage) {
     attrs {
         this.icon = icon
         handler()

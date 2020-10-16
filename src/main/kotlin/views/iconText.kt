@@ -4,11 +4,11 @@ import kotlinx.css.*
 import react.RBuilder
 import react.RProps
 import react.child
-import react.dom.h2
-import react.dom.img
 import react.functionalComponent
 import styled.css
 import styled.styledDiv
+import styled.styledH2
+import styled.styledImg
 
 external interface IconTextProps : RProps {
     var icon: String
@@ -19,23 +19,31 @@ private val iconText = functionalComponent<IconTextProps> { props ->
     styledDiv {
         css {
             display = Display.flex
-            flex(1.0)
-            flexDirection = FlexDirection.row
-            alignItems = Align.center
+            margin(bottom = 2.em)
         }
-        img(src = props.icon) {
+        styledImg(src = props.icon) {
+            css {
+                padding(right = 2.em)
+            }
             attrs {
-                height = 32.toString()
-                width = 32.toString()
+                height = "32em"
+                width = "32em"
             }
         }
-        h2 {
+        styledH2 {
+            css {
+                margin(all = 0.em)
+            }
             +props.text
         }
     }
 }
 
-fun RBuilder.iconText(icon: String, text: String, handler: IconTextProps.() -> Unit) = child(iconText) {
+fun RBuilder.iconText(
+        icon: String,
+        text: String,
+        handler: IconTextProps.() -> Unit
+) = child(iconText) {
     attrs {
         this.icon = icon
         this.text = text

@@ -4,7 +4,6 @@ import kotlinx.css.*
 import react.RBuilder
 import react.RProps
 import react.child
-import react.dom.a
 import react.functionalComponent
 import styled.css
 import styled.styledA
@@ -22,15 +21,19 @@ private val linkIcon = functionalComponent<LinkIconProps> { props ->
         }
         styledImg(src = props.icon) {
             css {
-                width = LinearDimension("2.5em")
-                height = LinearDimension("2.5em")
-                margin(horizontal = LinearDimension("0.5em"))
+                width = 2.em
+                height = 2.em
+                margin(horizontal = 0.5.em)
             }
         }
     }
 }
 
-fun RBuilder.linkIcon(link: String, icon: String, handler: LinkIconProps.() -> Unit) = child(linkIcon) {
+fun RBuilder.linkIcon(
+        link: String,
+        icon: String,
+        handler: LinkIconProps.() -> Unit
+) = child(linkIcon) {
     attrs {
         this.link = link
         this.icon = icon

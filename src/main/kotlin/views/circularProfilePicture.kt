@@ -15,23 +15,27 @@ external interface CircularProfilePictureProps : RProps {
 }
 
 private val circularProfilePicture = functionalComponent<CircularProfilePictureProps> { props ->
-    styledA (href = props.link) {
+    styledA(href = props.link) {
         css {
             display = Display.inlineBlock
         }
         styledImg(src = props.icon) {
             css {
-                width = LinearDimension("20em")
-                borderWidth = LinearDimension("0.25em")
+                width = 20.em
+                borderWidth = 0.25.em
                 borderStyle = BorderStyle.solid
-                borderRadius = LinearDimension("50%")
+                borderRadius = 50.pct
                 borderColor = Color.currentColor
             }
         }
     }
 }
 
-fun RBuilder.circularProfilePicture(link: String, icon: String, handler: CircularProfilePictureProps.() -> Unit) = child(circularProfilePicture) {
+fun RBuilder.circularProfilePicture(
+        link: String,
+        icon: String,
+        handler: CircularProfilePictureProps.() -> Unit
+) = child(circularProfilePicture) {
     attrs {
         this.link = link
         this.icon = icon

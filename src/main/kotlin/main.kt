@@ -1,89 +1,84 @@
+import data.Experience
+import data.Redirection
 import kotlinx.browser.document
-import kotlinx.browser.window
 import kotlinx.css.*
-import kotlinx.css.properties.border
-import org.w3c.dom.events.Event
+import kotlinx.css.properties.boxShadow
 import react.dom.*
-import react.useEffect
-import react.useEffectWithCleanup
-import react.useLayoutEffectWithCleanup
-import react.useState
+import segment.experienceSegment
 import segment.introSegment
 import styled.*
 import views.backgroundImage
+import views.experienceCard
 import views.lineSeparator
+import views.linkIcon
+
 
 fun main() {
     render(document.getElementById("root")) {
-
+        val experiences = listOf(
+                Experience(
+                        videoUrl = "https://www.youtube.com/embed/Id363jnLcLY",
+                        title = "Microflux",
+                        description = "Rss reader all that is build using kotlin with MPP in mind Rss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindvvRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindRss reader all that is build using kotlin with MPP in mindvRss reader all that is build using kotlin with MPP in mind",
+                        time = "From a to b",
+                        redirections = listOf(
+                                Redirection(
+                                        url = "https://github.com/ConstantinCezB",
+                                        icon = "drawable/github.svg"
+                                ),
+                                Redirection(
+                                        url = "https://play.google.com/store/apps/developer?id=Cezar+Constantin+Begu",
+                                        icon = "drawable/google-play.svg"
+                                )
+                        )
+                ),
+                Experience(
+                        videoUrl = "https://www.youtube.com/embed/5qap5aO4i9A",
+                        title = "Microflux",
+                        description = "Rss reader all that is build using kotlin with MPP in mind",
+                        time = "From a to b",
+                        redirections = listOf(
+                                Redirection(
+                                        url = "https://github.com/ConstantinCezB",
+                                        icon = "drawable/github.svg"
+                                ),
+                                Redirection(
+                                        url = "https://play.google.com/store/apps/developer?id=Cezar+Constantin+Begu",
+                                        icon = "drawable/google-play.svg"
+                                )
+                        )
+                ),
+                Experience(
+                        videoUrl = "https://www.youtube.com/embed/Id363jnLcLY",
+                        title = "Microflux",
+                        description = "Rss reader all that is build using kotlin with MPP in mind",
+                        time = "From a to b",
+                        redirections = listOf(
+                                Redirection(
+                                        url = "https://github.com/ConstantinCezB",
+                                        icon = "drawable/github.svg"
+                                ),
+                                Redirection(
+                                        url = "https://play.google.com/store/apps/developer?id=Cezar+Constantin+Begu",
+                                        icon = "drawable/google-play.svg"
+                                )
+                        )
+                ),
+        )
         backgroundImage(icon = "drawable/background.png") {}
         styledDiv {
             css {
                 color = Color("#fff")
             }
             introSegment {}
-
-            styledDiv {
-                css {
-                    display = Display.flex
-                    flex(1.0)
-                    flexDirection = FlexDirection.column
-                    justifyContent = JustifyContent.center
-                    alignItems = Align.center
-                }
-                h2 {
-                    +"Work Experience"
-                }
-                lineSeparator {}
-                styledDiv {
-                    css {
-                        marginTop = LinearDimension("0")
-                        backgroundColor = Color("rgba(52, 52, 52, 0.5)")
-                        width = LinearDimension("100%")
-                    }
-                    styledH3 {
-                        css { marginTop = LinearDimension("0") }
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    h3 {
-                        +"testing"
-                    }
-                    styledH3 {
-                        css { marginBottom = LinearDimension("0") }
-                        +"testing"
-                    }
-                }
-                lineSeparator {}
-            }
-
-
+            experienceSegment(
+                    title = "Work Experience",
+                    experiences = experiences
+            ) {}
+            experienceSegment(
+                    title = "Work Experience 2",
+                    experiences = experiences
+            ) {}
         }
     }
 }
